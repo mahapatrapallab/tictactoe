@@ -1,0 +1,47 @@
+table{
+    background-color: black;
+    border-radius: 5px;
+    height: 80vmin;
+    width: 80vmin;
+    box-shadow: 0px 0px 12px 12px lightskyblue;
+
+}
+
+td{
+    background-color: darkviolet;
+    border: 4px outset cyan;
+    border-radius: 5px;
+    text-align: center;
+    height: 31%;
+    width: 31%;
+    cursor: default;
+}
+.win{
+    background-color: royalblue;
+    border-color: violet;
+    position: relative;
+    box-shadow: 0px 0px 10px 10px black;
+    z-index: 1;
+}
+td:hover{
+    background-color: darkmagenta;
+    border-color: paleturquoise;
+}
+td:active{
+    background-color: indigo;
+    border-color: aqua;
+}
+h1{
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    font-size: 17vmin;
+    margin: 0%;
+    padding-left: 0px;
+    padding-right: 0px;
+    text-shadow: -5px 2px black;
+}
+.x{
+    color: lime;
+}
+.o{
+    color: orangered;
+}

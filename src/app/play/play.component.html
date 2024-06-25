@@ -1,0 +1,76 @@
+@if(!start){
+    <div class="modal">
+        <div class="popup">
+            <h4>Please enter player names.</h4>
+            <div class="base-h-2">
+                <div class="base-v-2">
+                    <h4>Player {{(modal.twoplayer)?'X':' '}}:</h4>
+                    <input type="text" placeholder="Enter Name" name="player1" [(ngModel)]="modal.playerx">
+                </div>
+                @if(modal.twoplayer){
+                    <div class="base-v-2">
+                        <h4>Player O:</h4>
+                        <input type="text" placeholder="Enter Name" name="player2" [(ngModel)]="modal.playero">
+                    </div>
+                }
+                @else{
+                    <div class="v">
+                        <h4>Choose Type</h4>
+                        <div class="base-h-2">
+                            <input type="radio" name="element" value="X" [(ngModel)]="modal.choice">
+                            <label>: X</label>
+                        </div>
+                        <div class="base-h-2">
+                            <input type="radio" name="element" value="O" [(ngModel)]="modal.choice">
+                            <label>: O</label>
+                        </div>
+                    </div>
+                }
+            </div>
+            <button (click)="start=true;modal.vsComputer()">OK</button>
+        </div>
+    </div>
+}
+<div class="base-h">
+    @if(game.disable===true || game.moves===9){
+        <div class="end" [@end]="(game.disable===true || game.moves===9)?'re':'none'">
+            <button (click)="newgm()">New Game</button>
+            <button (click)="re()">Re-match</button>
+        </div>
+    }
+    <div class="playerx" [ngClass]="xlight">
+        <div class="title">
+            <h3>{{playerx+" - "}}</h3>
+            <h2>X</h2>
+        </div>
+        @if(game.disable===true && game.turn==='X' && game.row.length!=0 && game.column.length!=0){
+            <div class="winner" [@win]="(game.disable===true && game.turn==='X' && game.row.length!=0 && game.column.length!=0)?'win':'none'">
+                <h2>Winner !!</h2>
+                <h3>Score ~ {{game.score()}}</h3>
+            </div>
+        }
+        @if(game.disable===false && game.moves===9){
+            <div class="tied" [@tie]="(game.disable===false && game.moves===9)?'tied':'none'">
+                <h2>Tie--</h2>
+            </div>
+        }
+    </div>
+    <app-board></app-board>
+    <div class="playero" [ngClass]="olight">
+        <div class="title">
+            <h3>{{playero+" - "}}</h3>
+            <h2>O</h2>
+        </div>
+        @if(game.disable===true && game.turn==='O' && game.row.length!=0 && game.column.length!=0){
+            <div class="winner" [@win]="(game.disable===true && game.turn==='O' && game.row.length!=0 && game.column.length!=0)?'win':'none'">
+                <h2>Winner !!</h2>
+                <h3>Score ~ {{game.score()}}</h3>
+            </div>
+        }
+        @if(game.disable===false && game.moves===9){
+            <div class="tied" [@tie]="(game.disable===false && game.moves===9)?'tied':'none'">
+                <h2>Tie--</h2>
+            </div>
+        }
+    </div>
+</div>

@@ -1,0 +1,208 @@
+.base-h{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-content: space-around;
+    align-items: center;
+    flex-wrap: wrap;
+    height: 100vh;
+    width: 100vw;
+}
+.modal{
+    background-color: rgba(0, 0, 0, 0.89);
+    height: 100vh;
+    width: 100vw;
+    z-index: 1;
+    position: fixed;
+}
+.popup{
+    background-color: darkgreen;
+    color: darkblue;
+    border: 4px solid cyan;
+    border-radius: 5px;
+    box-shadow: 0 0 5px 5px lightblue;
+    margin: auto;
+    margin-top: 20vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-content: center;
+    align-items: center;
+    height: 30vh;
+    width: 70vmin;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-weight: lighter;
+}
+.base-h-2{
+    color: gold;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif ;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    align-items: center;
+    flex-wrap: wrap;
+}
+.base-v-2{
+    display: flex;
+    flex-direction: column;
+    align-content: center;
+    align-items: center;
+}
+.base-v-2 input{
+    background-color: plum;
+    width: 70%;
+}
+.v{
+    display: flex;
+    flex-direction: column;
+    align-content: center;
+    align-items: stretch;
+}
+.popup button{
+    height: 15%;
+    width: 20%;
+    background-color: lightgreen;
+    color: darkslategrey;
+    border: 3px outset tomato;
+    border-radius: 3px;
+    padding-top: 1px;
+    padding-left: 4px;
+    font-weight: bold;
+    font-size: large;
+    overflow: hidden;
+}
+.popup button:hover{
+    background-color: paleturquoise;
+    border-color: orange;
+}
+.popup button:active{
+    background-color: lightseagreen;
+    border-color: coral;
+}
+.end{
+    opacity: 0;
+    position: fixed;
+    top: 8vh;
+    right:1vw;
+}
+.end button{
+    background-color: darkolivegreen;
+    border: 2px outset aquamarine;
+    border-radius: 3px;
+    color: white;
+}
+.end button:hover{
+    background-color: olive;
+    border-color: paleturquoise;
+}
+.end button:active{
+    background-color: olivedrab;
+    border-color: aqua;
+}
+.playerx{
+    background-color: palegreen;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-content: center;
+    align-items: center;
+    height: 15vmax;
+    width: 20vmax;
+    border: 5px outset lime;
+    border-radius: 5px;
+    
+}
+.playerx h2{
+    color: lime;
+}
+.shadowx{
+    box-shadow: 0 0 10px 10px lightgreen;
+}
+.playero{
+    background-color: darksalmon;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-content: center;
+    align-items: center;
+    height: 15vmax;
+    width: 20vmax;
+    border: 5px outset orange;
+    border-radius: 5px;
+}
+.playero h2{
+    color: orangered;
+}
+.shadowo{
+    box-shadow: 0 0 10px 10px lightsalmon;
+}
+.title{
+    background-color: black;
+    border: 3px solid mediumslateblue;
+    padding-left: 3px;
+    padding-right: 3px;
+    border-radius: 5px;
+    display: flex;
+    align-items: center;
+    color: gold;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 3vmin;
+}
+.winner{
+    opacity: 0;
+    background-color: steelblue;
+    border: 3px solid gold;
+    padding: 10px;
+    border-radius: 5px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 0;
+    height: 0;
+    font-size: 0vmin;
+}
+.winner h2{
+    color: gold;
+}
+.winner h3{
+    color: palegoldenrod;
+}
+.shadowin{
+    box-shadow: 0px 0px 15px 15px gold;
+}
+.tied{
+    opacity: 0;
+    background-color: steelblue;
+    border: 3px solid silver;
+    padding: 10px;
+    border-radius: 5px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 0;
+    height: 0;
+    font-size: 0vmin;
+}
+.tied h2{
+    color: silver;
+}
+h2{
+    margin-bottom: 0%;
+    margin-top: 0%;
+    padding-bottom: 0%;
+    padding-top: 0%;
+}
+h3{
+    margin-bottom: 0%;
+    margin-top: 0%;
+    padding-bottom: 0%;
+    padding-top: 0%;
+}
+h4{
+    margin-bottom: 0%;
+    margin-top: 0%;
+    padding-bottom: 0%;
+    padding-top: 0%;
+}

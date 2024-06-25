@@ -1,0 +1,46 @@
+
+nav {
+    background-color:darkviolet;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    min-height: 5vh;
+    width: 100vw;
+}
+a {
+    cursor: default;
+    background-color:darkolivegreen;
+    margin-left: 3vw;
+    margin-right: 3vw;
+    padding: 4px;
+    display: flex;
+    align-items: center;
+    border: 3px outset;
+    border-color: aquamarine;
+    border-radius: 2px;
+    text-decoration: none;
+    text-wrap: wrap;
+    color: inherit;
+}
+a:hover{
+    background-color: olive;
+    border-color: darkcyan;
+}
+a:active{
+    background-color: olivedrab;
+    border-color: lightskyblue;
+}
+.activelink{
+    background-color: darkgreen;
+    border-color: aqua;
+}
+h3 {
+    text-align: center;
+    margin: 0%;
+    padding: 0%;
+}
+h2 {
+    text-align: center;
+    margin: 3vh;
+    padding: 0%;
+}

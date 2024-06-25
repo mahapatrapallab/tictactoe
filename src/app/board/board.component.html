@@ -1,0 +1,11 @@
+<table>
+    @for (row of game.board; track row; let i=$index) {
+        <tr>
+            @for (item of row; track item; let j=$index) {
+                <td (click)="game.place(i,j)" [@play]="(game.row[game.column.indexOf(j)]===i||game.column[game.row.indexOf(i)]===j)?'win':'default'">
+                    <h1 [class]="(game.board[i][j]==='X')?game.x:game.o">{{game.board[i][j]}}</h1>
+                </td>
+            }
+        </tr>
+    }
+</table>
